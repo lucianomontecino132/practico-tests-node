@@ -32,12 +32,7 @@ assert.equal(resultado, 2);
 });
 
 test('dividir 10 / 0 lanza error', () => {
-// Arrange (preparar): los datos de entrada
-const a = 10;
-const b = 0;
-// Act (ejecutar): llamar a la función
-const resultado = dividir(a, b);
-//Assert (verificar): comparar con lo esperado
-assert.throws(() => dividir(10, 0), { message: 'No se puede dividir por cero' });
+    // Assert (verificar): assert.throws ejecuta la función y comprueba que lance el error esperado
+    assert.throws(() => dividir(10, 0), { message: 'No se puede dividir por cero' });
 });
 
